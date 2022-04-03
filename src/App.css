@@ -1,0 +1,7 @@
+*{
+  margin: 0;                    /*Here we set our own margin because by default the browsers give some random margins among different 
+                                rows we can control it by using this cmd*/
+}
+.app {
+  background-color: #111;     /*It will change the background color of the webapp*/
+}

@@ -1,0 +1,29 @@
+.nav{
+    position: fixed;                                /*Icons in nav will always be at top even though we are scrolling*/
+    top: 0;
+    width: 100%;                                    /*This and justify-content: space-between; line will generate a gap between Let's see icon and avatar icon*/
+    padding: 20px;                                  /*Padding is added so that the icons don't touch the above surface of screen */
+    height: 30px;
+    display: flex;                                 /*Resizing both the icons and make them equal also make them in a single row*/
+    justify-content: space-between;
+    z-index: 1;                                   /*Because its header and always on top*/
+    /*Animations*/
+    transition-timing-function: ease-in;         /*ease in gives very gradual fade in*/
+    transition: all 0.5s;                        /*Any change do fade in with 0.5s of delay*/
+    
+}
+.nav__black{
+    background-color: black;                  /*While scrolling This black color will show up*/
+}
+.nav__logo{
+    position: fixed;
+    left: 20px;                                 /*Icon pushed away from left*/
+    width: 80px;
+    object-fit:contain ;                        /*Width will decrease the width but object will not be fit for good image so we have to object fit also*/
+}
+.nav__avatar{
+    position: fixed;
+    right: 20px;
+    width: 30px;
+    object-fit: contain;
+}

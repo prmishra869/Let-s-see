@@ -1,0 +1,41 @@
+.row{
+  color: white;
+  margin-left: 20px;                   /*We are adding some gap on the left side of screen to each row*/
+
+}
+
+
+.row__posters {                        /*row__posters is for container or row as a whole*/
+  display: flex;                       /*This line will display image from rows based posters to column based*/
+  overflow-y:hidden;                   /*We want to hide any vertical scrolling whereas horizontal scrolling is visible as the below command is given put "scroll" 
+                                       in place of hidden and observe the changes*/
+  overflow-x: scroll;                   /*This is for when we scroll the icon to right or left then only that particular container move and no other thing move*/
+  padding: 20px;                        /*This cmd will avoid image to get hide by the scroll bar when we put our mouse icon over it(hover)*/
+  
+}
+.row__posters::-webkit-scrollbar{
+  display: none;                        /*This is used to tell all the web browsers like edge chrome etc. to use the functionality of scrollbar but without
+                                        showing it on the screen comment the line and observe the changes*/
+}
+
+.row__poster {                          /*row__poster is for individual posters of the movies*/
+                                       /*row__poster is the class name in Row.js file and it shows posters of movies in the row */
+  object-fit: contain;                 /*Aspect ratio it will handle*/
+  width: 100%;                         /*These two lines will set the poster according to screen size*/
+  max-height: 100px;                   /*This line will adjust the height of image*/
+  margin-right: 10px;                  /*It will create a gap between two icons*/
+  transition: transform 450ms;         /*If we change size then icons must change in slow way(Transition must look smooth)*/
+}
+
+.row__poster:hover{                    /*hover means mouse over icon or posters*/
+  transform: scale(1.08);              /*Whenever mouse will be over a poster then that poster will enlarge little bit and this will happen with 
+                                       smooth tansition because above we use command transition: transform 450ms;*/
+}
+
+.row__posterLarge{
+  max-height: 250px;                   /*We are defining the large poster size of original row*/
+}
+
+.row__posterLarge:hover{
+  transform: scale(1.09);              /*We are increasing the hover transform scale of original row only because icons are large*/
+}

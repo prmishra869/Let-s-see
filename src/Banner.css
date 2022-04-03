@@ -1,0 +1,60 @@
+.banner {
+    color: white;
+    object-fit: contain;
+    height: 448px;
+    
+}
+
+.banner__contents {
+   margin-left: 30px;                  /*Add some margin to the content written from left side*/
+   padding-top: 140px;                 /*It will add some gap from the top in the banner*/
+   height: 190px;                     /*changing height of the content*/
+
+}
+
+.banner__title{
+    font-size: 3rem;                  /*title font size is 3 rem*/
+    font-weight: 800;                 /*change the boldness of the title*/
+    padding-bottom: 0.3rem;
+}
+
+.banner__description{
+    width: 45rem;                   /*width of the decription*/
+    line-height: 1.3;              /*line of each height*/
+    padding-top: 1rem;             /*Providing space at top of description*/
+    font-size: 0.8rem;
+    max-width: 360px;
+    height: 80px;
+}
+.banner__button{
+    cursor: pointer;               /*It will make finger symbol when we hover over button*/
+    color: #fff;                 /*color is white*/
+    outline: none;                 /*don't want any border*/
+    border: none;
+    font-weight: 700;              /*Slightly Bold*/
+    border-radius: 0.2vw;         /*Button is curved at corners*/
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: rgba(51,51,51,0.5);/*light grey*/
+    
+}
+
+.banner__button:hover {           /*When we hover over the button then we will see these change*/
+    color:black;                /*Text colour will be black*/
+    background-color: #e6e6e6;  /*Background color will get change*/
+    transition: all 0.2s;
+}
+
+/*This will fade the bottom of the Banner and this will look quite amazing*/
+.banner--fadeBottom {
+    height: 7.4rem;
+    background-image: linear-gradient(
+        180deg,
+        transparent,
+        rgba(37,37,37,0.61),
+        #111
+    );
+}
