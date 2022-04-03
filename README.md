@@ -1,5 +1,8 @@
-# Documentation of the journy of this project
+# Documentation of the journey of this project
 https://docs.google.com/document/d/1wElJckHTjmjoV8usfV9A1S2VeJLQO-Kd1Q38dsCsLsk/edit?usp=sharing
+
+# Live project link
+https://lets-see-5cb2d.web.app/
 
 # Getting Started with Create React App
 
